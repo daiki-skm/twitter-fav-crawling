@@ -116,7 +116,7 @@ func main() {
 		notionCreatePageParams := notion.CreatePageParams {
 			ParentType: notion.ParentTypeDatabase,
 			ParentID: notionDBID,
-			DatabasePageProperties: &notion.DatabasePageProperties{"title":notionDatabasePagePropertyTitle,"url":notionDatabasePagePropertyURL},
+			DatabasePageProperties: &notion.DatabasePageProperties{"title":notionDatabasePagePropertyTitle,"URL":notionDatabasePagePropertyURL},
 		}
 
 		notionClient := notion.NewClient(notionToken)
